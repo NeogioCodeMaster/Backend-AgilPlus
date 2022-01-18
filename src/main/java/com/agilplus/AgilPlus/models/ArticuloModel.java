@@ -39,4 +39,67 @@ public class ArticuloModel {
     @ManyToOne
     @JoinColumn(name="idFamilia")
     FamiliaModel familiaModel;
+    
+    public Long getId() {
+        return id;
+    }
+    public void setId(Long id) {
+        this.id = id;
+    }
+    public String getDescripcion() {
+        return descripcion;
+    }
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
+    public int getVr_compra() {
+        return vr_compra;
+    }
+    public void setVr_compra(int vr_compra) {
+        this.vr_compra = vr_compra;
+    }
+    public int getVr_ventra() {
+        return vr_ventra;
+    }
+    public void setVr_ventra(int vr_ventra) {
+        this.vr_ventra = vr_ventra;
+    }
+    public int getIva() {
+        return iva;
+    }
+    public void setIva(int iva) {
+        this.iva = iva;
+    }
+    public boolean isVisibilidad() {
+        return visibilidad;
+    }
+    public void setVisibilidad(boolean visibilidad) {
+        this.visibilidad = visibilidad;
+    }
+    public int getFecha_act() {
+        return fecha_act;
+    }
+    public void setFecha_act(int fecha_act) {
+        this.fecha_act = fecha_act;
+    }
+    public UbicacionModel getUbicacionModel() {
+        return ubicacionModel;
+    }
+    public void setUbicacionModel(UbicacionModel ubicacionModel) {
+        this.ubicacionModel = ubicacionModel;
+    }
+    public MarcaModel getMarcoModel() {
+        return marcoModel;
+    }
+    public void setMarcoModel(MarcaModel marcoModel) {
+        this.marcoModel = marcoModel;
+    }
+    public FamiliaModel getFamiliaModel() {
+        return familiaModel;
+    }
+    public void setFamiliaModel(FamiliaModel familiaModel) {
+        this.familiaModel = familiaModel;
+    }
+
+    
 }

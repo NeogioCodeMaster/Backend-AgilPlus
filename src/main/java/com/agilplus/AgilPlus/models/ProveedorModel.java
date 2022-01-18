@@ -30,4 +30,67 @@ public class ProveedorModel {
     @ManyToOne
     @JoinColumn(name="idBarrio")
     BarrioModel barrioModel;
+    
+    public Long getId() {
+        return id;
+    }
+    public void setId(Long id) {
+        this.id = id;
+    }
+    public String getRazonSocial() {
+        return razonSocial;
+    }
+    public void setRazonSocial(String razonSocial) {
+        this.razonSocial = razonSocial;
+    }
+    public int getNit() {
+        return nit;
+    }
+    public void setNit(int nit) {
+        this.nit = nit;
+    }
+    public int getDigitoVerificacion() {
+        return digitoVerificacion;
+    }
+    public void setDigitoVerificacion(int digitoVerificacion) {
+        this.digitoVerificacion = digitoVerificacion;
+    }
+    public String getAsesor() {
+        return asesor;
+    }
+    public void setAsesor(String asesor) {
+        this.asesor = asesor;
+    }
+    public String getTelefono() {
+        return telefono;
+    }
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
+    }
+    public String getCelular() {
+        return celular;
+    }
+    public void setCelular(String celular) {
+        this.celular = celular;
+    }
+    public String getEmail() {
+        return email;
+    }
+    public void setEmail(String email) {
+        this.email = email;
+    }
+    public String getPagWeb() {
+        return pagWeb;
+    }
+    public void setPagWeb(String pagWeb) {
+        this.pagWeb = pagWeb;
+    }
+    public BarrioModel getBarrioModel() {
+        return barrioModel;
+    }
+    public void setBarrioModel(BarrioModel barrioModel) {
+        this.barrioModel = barrioModel;
+    }
+
+    
 }
